@@ -28,6 +28,7 @@ class ShoppingCart extends React.Component {
         <span style={style}> {shoppingCart}</span>
         <button disabled={shoppingCart === availableProducts? true : false} onClick={this.handleAddToCart}> + </button>
         {shoppingCart > 0 && <button onClick={this.handleBuyButton}>Kup</button>}
+        <div>Dostępność: {availableProducts}</div>
       </div>
     )
  }
